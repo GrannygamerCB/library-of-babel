@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P12</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p13.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">12</div>
+			<p><span id="commentA" class="underline">Others, inversely, believed that it was fundamental to eliminate useless works. They invaded the hexagons, showed credentials which were not always false, leafed through a volume with displeasure and <span id="condemned" class="italics">condemned</span> whole shelves: their hygienic, <span id="ascetic" class="italics">ascetic</span> furor caused the senseless <span id="perdition" class="italics">perdition</span> of millions of books.</span> Their name is <span id="execrated" class="italics">execrated,</span> but those who deplore the ‘treasures’ destroyed by this frenzy neglect two notable facts. One: <span class="highlight">the Library is so enormous that any reduction of human origin is <span id="infinitesimal" class="italics">infinitesimal.</span></span> The other: every copy is unique., irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect <span id="facsimiles" class="italics">facsimiles:</span> <spans class="highlight">works which differ only in a letter or a comma.</span></spans> Counter to general opinion, I venture to suppose that the consequences of the <span id="commentB" class="circle">Purifiers’</span> deprediations have been exaggerated by the horror of these fanatics produced. They were urged on by the delirium of trying to reach the books in the <span id="commentC" class="circle">Crimson Hexagon:</span> <span id="commentD" class="underline">books whose format is smaller than usual, all-powerful, illustrated and magical.</span></p>
+		</div>
+		<div class="context">
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+						Con-demned (v): to declare to be reprehensible, wrong or evil, usually after weighing evidence and without reservation; to pronounce guilty; to adjudge unfit for use or consumption; to declare convertible to public use under the right of eminent domain
+					</li>
+					<li id="vocabB">
+						As-cet-ic (adj): characterized by or suggesting the practice of severe self-discipline and abstention from all forms of indulgence, typically for religious reasons; (n) a person who practices severe self-discipline and abstention
+					</li>
+					<li id="vocabC">
+						Per-di-tion (n): (in Christian theology) a state of eternal punishment and damnation into which a sinful and impenitent person passes after death
+					</li>
+					<li id="vocabD">
+						Ex-e-crate (v): feel or express great loathing for
+					</li>
+					<li id="vocabE">
+						In-fin-i-tes-i-mal (adj): extremely small; (n): an indefinitely small quantity; a value approaching zero
+					</li>
+					<li id="vocabF">
+						Fas-cim-i-les (n): an exact copy, especially of written or printed material
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					Purifiers: some people had logic that good books would be done by throwing out bad books--What if their bad books are someone else's good books?
+				</p>
+
+				<p id="commentBc">
+					Response to the Library is rage and destruction, resulting in an endless madness
+				</p>
+
+				<p id="commentCc">
+					Those who believe there is some special hexagon that contains all the answers
+				</p>
+
+				<p id="commentDc">
+					Imposing the idea of order or answers in chaos
+				</p>
+			</div>
+
+			<div class="footnotes">
+				<span style="font-style: italic;">Footnotes</span>
+				<p>
+					<a href="https://rebeccawilkinson.me/The-Library-of-Babel">Martin Dupius and Rebecca Wilkinson: The Library of Babel</a>
+				</p>
+			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

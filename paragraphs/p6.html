@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P6</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p7.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">06</div>
+			<p>Second: The <span id="orthographical" class="italics">orthographical</span> symbols are twenty-five in number[1]. This finding made it possible, three hundred years ago, to formulate a general theory of the Library and solve satisfactorily the problem which no conjecture had deciphered: <span class="highlight">the formless and chaotic nature of almost all the books.</span> One which my father saw in a hexagon on circuit fifteen ninety-four was made up of the letters MCV, perversely repeated from the first line to the last. Another (very much consulted in this area) is a mere <span id="labyrinth" class="italics">labyrinth</span> of letters, but the next-to-last page says Oh time thy pyramids. This much is already known: <span id="commentA" class="underline">for every sensible line of straightforward statement, there are leagues of senseless <span id="cacophonies" class="italics">cacophonies,</span> verbal jumbles and incoherences.</span> (I know of an <span id="uncouth" class="italics">uncouth</span> region whose librarians repudiate the vain and superstitious custom of finding a meaning in dreams or in the chaotic lines of one’s palm… They admit that the inventors of this writing imitated the twenty-five natural symbols, but maintain that this application is accidental and that the books signify nothing in themselves. This dictum, we shall see, is not entirely <span id="fallacious" class="italics">fallacious</span>.)</p>
+		</div>
+		<div class="context">
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+
+						Or-the-gra-phi-cal (adj): of, relating to, being, or prepared by orthographic projection
+					</li>
+					<li id="vocabB">
+
+						La-byr-inth (n): a place constructed of or full of intricate passageways and blind alleys; a maze (as in a garden) formed by paths separated by high edges
+					</li>
+					<li id="vocabC">
+
+						Ca-coph-o-ny (n): a harsh discordant mixture of sounds
+					</li>
+					<li id="vocabD">
+
+						Un-couth (adj): (of a person of their appearance of behavior) lacking good manners, refinement, or gace; (especially of art or language) lacking sophistication or delicacy; (of a place) uncomfortable, especially because of remoteness or poor conditions
+					</li>
+					<li id="vocabE">
+
+						Fal-la-cious (adj): embodying a fallacy (a false or mistaken idea); tending to deceive or mislead 
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					Hope for clues to the meaning of the Library, is quickly lost among more illegible chaos and confusion. 
+				</p>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

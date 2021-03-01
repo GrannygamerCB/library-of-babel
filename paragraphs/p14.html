@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P14</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p15.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">14</div>
+			<p>The methodical task of writing distracts me from the <span id="commentA" class="underline">present state of men.</span> The certitude that everything has been written negates us or turns us into <span id="phantoms" class="italics">phantoms.</span> I know of districts in which young men prostrate themselves before books and kiss their pages in a barbarous manner, but they do not know how to decipher a single letter. <span id="epidemics" class="italics">Epidemics,</span> <span id="heretical" class="italics">heretical</span> conflicts, <spa id="peregrinations" class="italics">peregrinations</spa> which inevitably degenerate into the banditry, have decimated the population. I believe <span id="commentB" class="underline">I have mentioned suicides, more and more frequent with the years.</span> Perhaps my old age and fearfulness deceive me, but I suspect that the human species -- the unique species -- is about to be extinguished, <span id="commentC" class="underline">but the Library will endure:</span> illuminated, solitary, infinite, perfectly motionless, equipped with precious volumes, useless, incorruptible, secret.</p>
+		</div>
+		<div class="context">
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+						Phan-tom (n): a ghost; a figment of imagination; denoting a financial arrangement or transaction that has been invented for fraudulent purposes but that does not really exist
+					</li>
+					<li id="vocabB">
+						Ep-i-dem-ic (n): a widespread occurrence of an infectious disease in a community at a particular time; (adj): of the nature of an epidemic
+					</li>
+					<li id="vocabC">
+						He-ret-i-cal (adj): believing in or practicing religious heresy; holding an opinion at odds with what is generally accepted
+					</li>
+					<li id="vocabD">
+						Per-e-gri-na-tion (n): a journey, especially a long or meandering one
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					Which is essentially mental insanity
+				</p>
+
+				<p id="commentBc">
+					To escape the Library?
+				</p>
+
+				<p id="commentCc">
+					The Library will exist, long after our lifetime, and then some
+				</p>
+			</div>
+
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P5</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p6.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">05</div>
+			<p>First: <span class="highlight">The Library exists <span id="ab-aeterno" class="italics">ab aeterno.</span></span> This truth, whose immediate corollary is the future eternity of the world, cannot be placed in doubt by any reasonable mind. <span class="highlight">Man, the imperfect librarian,</span> may be the product of chance or of malevolent <span id="demiurgi" class="italics">demiurgi;</span> the universe, with its elegant endowment of shelves, of <span id="enigmatical" class="italics">enigmatical</span> volumes, of inexhaustible stairways for the traveler and latrines for the seated librarian, <span class="highlight">can only be the work of a god.</span> To perceive the distance between the divine and the human, it is enough to compare these crude wavering symbols which my fallible hand scrawls on the cover of a book, with the organic letters inside: punctual, delicate, perfectly black, inimitably symmetrical. </p>
+
+		</div>
+		<div class="context">
+		<div id="modal" class="modal">
+			<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+						Ab-ae-ter-no: from an infinitely remote point of time in the past
+					</li>
+					<li id="vocabB">
+						De-muir-gi (n): plural of demiurgus; a Platonic subordinate deity who fashions the sensible world in light of eternal ideas; a Gnostic subordinate deity who is the creator of the material world; one that is an autonomous creative force or decisive power
+					</li>
+					<li id="vocabC">
+						En-ig-ma-ti-cal (adj): difficult to interpret or understand; mysterious
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					Handwriting as opposed to type and printed documents.
+				</p>
+			</div>
+
+
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+
+<script>
+		// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

@@ -1,0 +1,163 @@
+body {
+	background: #E9E9E9;
+	font-family: 'Noto Serif TC', serif;
+	overflow-y: scroll;
+}
+.nav {
+	border-bottom: 1px solid black;
+	margin: 0 -10px 0 -60px;
+	overflow: hidden;
+}
+.arrow{
+	border: 2px solid black;
+	border-width: 0 3.4px 3.4px 0;
+	padding: 18px;
+	display: inline-block;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	margin: 20px 0 20px 80px;
+}
+.arrow:hover {
+	border-color: black;
+	border-color: #ff5500;
+	transition: 0.2s all ease;
+}
+.wrapper {
+	display: flex;
+}
+ol {
+	font-size: 12px;
+	padding: 0;
+}
+ol li {
+	padding: ;
+}
+.intro {
+	margin-top: 40px;
+}
+.title span {
+	font-size: 30px;
+	border: 1px solid black;
+	padding: 0 10px 0 10px;
+}
+.title span:hover {
+	color: black;
+	background-color: #ff5500;
+	border-color: #ff5500;
+	transition: 0.4s all ease;
+}
+.name {
+	font-size: 16px;
+	padding-top: 20px;
+}
+.name:hover {
+	color: black;
+	color: #ff5500;
+	text-decoration: 1px solid #ff5500 underline;
+	transition: 0.4s all ease;
+}
+.italics {
+	font-style: italic;
+}
+.text {
+	border-right: 1px solid black;
+	width: 60%;
+	height: 650px;
+	overflow-y: scroll;
+	padding: 0 20px 0 20px;
+	font-size: 22px;
+}
+.context {
+	width: 40%;
+	height: 650px;
+	padding: 0 20px 0 20px;
+	overflow-y: scroll;
+	color: #9C9C9C;
+	font-size: 18px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	color: #9C9C9C;
+}
+a {
+	text-decoration: none;
+	color: #9C9C9C;
+}
+a:hover {
+	text-decoration: underline;
+	transition: 0.4s all ease;
+}
+.footnotes {
+	margin-top: 60px;
+	font-size: 12px;
+}
+ol li {
+	margin-top: 15px;
+}
+.notes {
+	font-size: 18px;
+	margin: 20px 0 0 0;
+	text-align: center;
+	display: none;
+}
+.close {
+	color: black;
+	float: right;
+	display: none;
+}
+.close:hover {
+	color: #ff5500;
+	transition: 0.4s all ease;
+}
+
+@media screen and (max-width: 800px){
+	
+	.wrapper {
+		display: block;
+	}
+	.text {
+		width: 95%;
+		border-bottom: 1px solid black;
+		border-right: none
+	}
+	.notes {
+		display: block;
+	}
+	.close {
+		display: block;
+	}
+	.modal {
+		display: none;
+	  	position: fixed;
+	  	z-index: 1; 
+	  	padding-top: 100px;
+	  	left: 0;
+	  	top: 0;
+	  	width: 100%;
+	  	height: 650px;
+	  	overflow-y: scroll;
+	  	background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.4); 
+	}
+	.modal-content{
+		font-family: 'Noto Serif TC', serif;
+		background-color: #E9E9E9;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid black;
+		width: 80%;
+		overflow-y: scroll;
+	}
+	button {
+		font-family: 'Noto Serif TC', serif;
+		font-size: 22px;
+		text-align: initial;
+		border: none;
+		background-color: transparent;
+	}
+	button:hover {
+		color: #ff5500;
+		transition: 0.4s all ease;
+	}
+}

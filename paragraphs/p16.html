@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P16</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p1.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">16</div>
+			<ol class="babel-footnotes">
+				<li>The original manuscript does not contain digits or capital letters. The punctuation has been limited to the comma and the period. These two signs, the space and the twenty-two letters of the alphabet are the twenty-five symbols considered sufficient by this unknown author. (Editor’s Note)</li>
+				<li><span class="highlight">Before, there was a man for every three hexagons. Suicide and <span id="pulmonary" class="italics">pulmonary</span> diseases have destroyed that proportion.</span> A memory of unspeakable melancholy: at times I have traveled for many nights through corridors and along polished stairways without finding a single librarian.</li>
+				<li>I repeat: it suffices that a book be possible for it to exist. <span class="highlight">Only the impossible is excluded.</span> For example: no book can be a ladder, although no doubt there are books which discuss and negate and demonstrate this possibility and others whose structure corresponds to that of a ladder.</li>
+				<li>Letizia Álvarez de Toledo has observed that this vast Library is <span id="commentA" class="circle">useless:</span> rigorously speaking, a single volume would be sufficient, a volume of ordinary format, printing in nine or ten point type, containing an infinite number of infinitely thin leaves. (In the early seventeenth century, Cavalieri said that all solid bodies are the <span id="superimposition" class="italics">superimposition</span> of an infinite number of planes.) The handling of this silky <span id="vade-mecum" class="italics">vade mecum</span> would not be convenient: each apparent page would unfold into each other analogous ones; the inconceivable middle page would have no reverse.</li>
+			</ol>
+
+		</div>
+		<div class="context">
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+						Pul-mon-ar-y (adj): relating to the lungs
+					</li>
+					<li id="vocabB">
+						Su-per-im-po-si-tion (v): to impose, place, or set over, or above something else; to put on or join as an addition (usually followed by an "on" or "upon")
+					</li>
+					<li id="vocabC">
+						Va-de Me-cum (n): a handbook or a guide that is constantly kept at hand for consultation
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					The Library should be a single source rather than an infinite number of hexagonal galleries.
+				</p>
+			</div>
+
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

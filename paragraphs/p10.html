@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P10</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p11.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">10</div>
+			<P>At that time it was also hoped that a clarification of humanity’s basic mysteries -- the origin of the Library and of time -- might be found It is <span id="verisimilar" class="italics">verisimilar</span> that these grave mysteries could be explained in words: <span class="highlight">if the language of philosophers is not sufficient, the multiform Library will have produced the unprecedented language required, with its vocabularies and grammars.</span> For four centuries now men have exhausted the hexagons… There are official searchers, <span id="commentA" class="circle">inquisitors.</span> I have seen them in the performance of their function: they always arrive extremely tired from their journeys;they speak of a broken stairway which almost killed them; they walk with the librarian of galleries and stairs; sometimes they pick up the nearest volume and leaf through it, looking for infamous words. <span id="commentB" class="underline">Obviously, no one expects to discover anything.</span></P>
+		</div>
+		<div class="context">
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+						Veri-sim-i-lar (adj): having the appearance of truth; depicting realism (as in art or literature)
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					Two sets of people: the librarians and the searchers.
+				</p>
+
+				<p id="commentBc">
+					Going through the motions of knowing it. Will not be fruitful- What else is there to do?
+				</p>
+			</div>
+
+			<div class="footnotes">
+				<span style="font-style: italic;">Footnotes</span>
+				<p>
+					<a href="https://rebeccawilkinson.me/The-Library-of-Babel">Martin Dupius and Rebecca Wilkinson: The Library of Babel</a>
+				</p>
+			</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

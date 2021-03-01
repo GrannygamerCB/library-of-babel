@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P9</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta class="viewport" content="width=device-with, initital-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+	<script src='assets/script.js' type="text/javascript"></script>
+</head>
+<body>
+	<div class="nav">
+			<a class="left-arrow" href="../index.html"></a>
+			<a class="right-arrow" href="p10.html"></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="text">
+			<div class="notes-dictionary"><button id="open">Notes / Dictionary</button></div>
+			<div class="number">09</div>
+			<p>When it was proclaimed that the Library contained all books, the first impression was one of extravagant happiness. All men felt themselves to be the masters of an intact and secret treasure. <span class="highlight">There was no personal or world problem whose eloquent solution did not exist in some hexagon.</span> <span id="commentA" class="underline">The universe was justified, the universe suddenly usurped the unlimited dimensions of hope.</span> At that time a great deal was said about the <span id="vindications" class="italics">Vindications:</span> books of apology and prophecy which vindicated for all time the acts of every man in the universe and retained <span id="prodigious" class="italics">prodigious</span> <span id="arcana" class="italics">arcana</span> for his future. Thousands of the greedy abandoned their sweet native hexagons and rushed up the stairways, urged on by the vain intention of finding their Vindication. These pilgrims disputed in the narrow corridors, proferred dark curses, <span id="commentB" class="underline">strangled each other on the divine stairways,</span> flung the deceptive books into the air shafts, met their death cast down in a similar fashion by the inhabitants of remote regions. Others went mad… The Vindications exist (I have seen two which refer to persons of the future, to persons who are perhaps not imaginary) but the searchers did not remember that <span id="commentC" class="underline">the possibility of a man’s finding his Vindication, or some treacherous variation thereof, can be computed as zero.</span></p>
+		</div>
+		<div class="context">
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+			<div class="definitions">
+				<ul>
+					<li id="vocabA">
+						Vin-di-ca-tions (n): the action of clearing someone of blame or suspicion; proof that someone or s	something is right, reasonable or justified.
+					</li>
+					<li id="vocabB">
+						Pro-di-gious (adj): remarkably or impressively great in extend, size or degree; unnatural or abnormal
+					</li>
+					<li id="vocabC">
+						Ar-ca-na (n): secrets or mysteries; either of the two groups of cards in a tarot pack: the twenty-two trump cards (the major arcana) and the fifty-six suit cards (the minor arcana)
+					</li>
+				</ul>
+			</div>
+
+			<div class="commentary">
+				<p id="commentAc">
+					The idea that the Library contains all books, and that the answer must exist somewhere, was enough to uplift the burden and intimidating vastness of the Library.
+				</p>
+
+				<p id="commentBc">
+					Mass suicides and murder- rooted from happiness?
+				</p>
+
+				<p id="commentCc">
+					Non-existent and not feasible - false hope.
+				</p>
+			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("open");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+</html>
